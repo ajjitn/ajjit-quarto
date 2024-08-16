@@ -61,4 +61,10 @@ format:
 execute:
   freeze: auto
 
+  resources:
+    - "files/**"
+
+    # Things that need to be at the site root
+    - ".htaccess"
+
 
