@@ -29,7 +29,7 @@ author-meta: "Ajjit Narayanan"
 <div>
 <center>
 <a href="blog/index.qmd" class="btn btn-outline-light" role="button">Blog</a>
-<a href="resume/index.qmd" class="btn btn-outline-light" role="button">Resume</a>
+<a href="resume/index.qmd" class="btn btn-outline-light" role="button">CV</a>
 <a href="projects/index.qmd" class="btn btn-outline-light" role="button">Projects</a>
 </center>
 </div>
