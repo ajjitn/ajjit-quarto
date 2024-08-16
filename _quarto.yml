@@ -1,0 +1,64 @@
+project:
+  type: website
+
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Ajjit Narayanan"
+author-meta: "Ajjit Narayanan"
+
+website:
+  title: "Ajjit Narayanan"
+  description: "Ajjit Narayanan is a Spatial Data Scientist"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  navbar:
+    pinned: true
+    search: true
+    
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "Resume"
+        href: resume/index.qmd
+      - text: "Blog"
+        file: blog/index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+
+    right:
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: "mailto:ajjit123@gmail.com"
+      - text: "{{< iconify bi github size=1.1em title='GitHub' >}}"
+        href: https://github.com/ajjitn
+      - text: "{{< iconify bi linkedin size=1.1em title='LinkedIn' >}}"
+        href: https://www.linkedin.com/in/ajjit-narayanan
+      - text: "{{< iconify bi twitter size=1.1em title='Twitter' >}}"
+        href: https://www.twitter.com/ajjit10
+
+
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Ajjit Narayanan</span>
+      <span class="faux-block"> Theme shamelessly stolen from: [Andrew Heiss](https://www.andrewheiss.com/)</span>
+
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View source code {{< fa brands github >}}]({{< var github-url >}})</span>
+
+format:
+  html:
+    theme: 
+      - html/website.scss
+#    grid: 
+#      body-width: 900px
+    toc: false
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+  
+execute:
+  freeze: auto
+
+

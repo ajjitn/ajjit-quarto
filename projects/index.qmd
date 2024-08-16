@@ -1,0 +1,79 @@
+---
+title: "Some stuff I've worked on"
+listing:
+  - id: projects_2024
+    contents: projects_2024.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: projects_2023
+    contents: projects_2023.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: projects_2022
+    contents: projects_2022.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: projects_2021
+    contents: projects_2021.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: projects_2020
+    contents: projects_2020.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+  - id: projects_2019
+    contents: projects_2019.yml
+    sort: "date desc"
+    template: ../html/talks/listing.ejs
+title-block-banner: "#659B5E"
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Type of Project
+date-format: "DD MMMM, YYYY"
+---
+
+
+
+## Data Tools
+
+-  Spatial Equity Data Tool. Nov 18, 2021
+
+-  Where Low-Income Jobs Are Being Lost to COVID-19: The places and industries most at risk. Aug 6, 2021
+
+-  Where to Prioritize Emergency Rental Assistance to Keep Renters in Their Homes: Mapping neighborhoods where low-income renters face greater risks of housing instability and homelessness to inform an equitable COVID-19 response. May 14, 2021
+
+- Tracking COVID-19’s Effects by Race and Ethnicity: Updates on People’s Health, Housing, and Livelihoods since August 19, 2020. Aug 5, 2022
+
+## Publications
+
+- Paper: Ethics and Empathy in Using Imputation to Disaggregate Data for Racial Equity, A Case Study Imputing Credit Bureau Data. July 21, 2021
+
+- Paper: Using Differential Privacy to Advance Rural Economic Development: Applying Data Privacy and Confidentiality Methods to Industry Employment Data
+
+- Paper: Towards an Open Data Bias Assessment Tool. Mar 5, 2019
+
+- Public Comment: Comment Letter on CEQ’s Climate and Economic Justice Screening Tool Beta Version. Apr 5, 2022
+
+- Blog: We need better tools to measure bias in data that drive decisionmaking. Urban Wire, Mar 5, 2019
+
+- Blog: To Advance Racial Equity, Releasing Disaggregated Data while Protecting Privacy Will Be Key. Urban Wire, Mar 2, 2021
+
+- Blog: Choosing a Geocoder for the Urban Institute. Data@Urban, Mar 10, 2020
+
+
+## Talks
+
+- Invited Presentation. Ethics of Imputation Case Study, Berkeley Computational Social Science Fall Fo-rum, Sep 2021
+
+- Invited Presentation. How to Move to Equitable Data Practice: Principles, Methods, and Tools, Association for Public Data Users Conference, July 2021 Invited Presentation. Introducing a Spatial Equity Data Tool, Code for America Annual Conference, Code for America, March 2020
+
+- Invited Presentation. Monthly updates on Jobs being lost to COVID-19, Data Science Conference on COVID-19, National Institute of Statistical Sciences, Aug 2020
+
+- Invited Presentation. Using the Emergency Rental Assistance Index, National Neighborhood Indicators Partnership, Sep 2020
+
+- Invited Presentation. Introducing a Spatial Equity Data Tool, Good Tech Fest Annual Conference, Good Tech Fest, May 2020
+
+- Invited Presentation. Differential Privacy applied to the QCEW, BLS Disclosure Limitation Board, December 2020
+
+

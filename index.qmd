@@ -1,0 +1,52 @@
+---
+title: "Hello There!"
+pagetitle: "Ajjit Narayanan"
+main-photo: files/profiles/ajjit_headshot.jpg
+main-photo-square: files/profiles/ajjit_headshot.jpg
+title-block-banner: "#659B5E"
+author-meta: "Ajjit Narayanan"
+
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-4}
+
+```{=html}
+<div class="grid" style="--bs-columns: 5; row-gap: 0;">
+  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-3 g-col-sm-5">
+    <picture>
+      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
+      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
+      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+    </picture>
+  </div>
+  <div class="g-col-1 g-col-sm-0"></div>
+</div>
+```
+<hr style="height:1px; visibility:hidden;" />
+<div>
+<center>
+<a href="blog/index.qmd" class="btn btn-outline-light" role="button">Blog</a>
+<a href="resume/index.qmd" class="btn btn-outline-light" role="button">Resume</a>
+<a href="projects/index.qmd" class="btn btn-outline-light" role="button">Projects</a>
+</center>
+</div>
+
+
+:::
+
+::: {.g-col-12 .g-col-sm-8}
+
+I'm the Lead Data Scientist for Housing Equity at the Department of Housing & Urban Development (HUD) in Washington DC. I'm on a funded fellowship through the [Federation for American Scientists](https://fas.org/talent-hub/impact-fellowship/) to build data and technology capacity within government. 
+
+In my current role I help create data and tools to investigate housing discrimination, build dashboards for policy-makers, and advise on long term IT/Data infrastructure needs. I love all things open source, mapping, and GIS!
+
+I got my Masters in Geographic Data Science from the London School of Economics in 2023, and a Bachelor's in Urban Studies and Economics from the University of Pennsylvania in 2019. Previously I worked as a Data Scientist for the [Urban Institute](https://www.urban.org/author/ajjit-narayanan), a Data Science Trainer at the LSE Digital Skills Lab, and a Data Science Consultant for the JED Foundation. 
+
+I'm also a scuba certified diver 🤿, an enthusiastic (but unskilled) soccer player ⚽, and an avid biker 🚲.
+
+:::
+
+:::

@@ -1,0 +1,30 @@
+---
+title: "The art of shameless stealing"
+date: 2024-08-15
+description: "Using Quarto templates to create this website"
+image: "img/positron-logo.png"
+twitter-card:
+  image: "img/positron-logo.png"
+open-graph:
+  image: "img/positron-logo.png"
+categories:
+  - r
+  - quarto
+  - data science
+format:
+  html: 
+    shift-heading-level-by: 1
+---
+
+At the end of June 2024, [Posit released a beta version](https://www.infoworld.com/article/3715702/maker-of-rstudio-launches-new-r-and-python-ide.html) of its next-generation IDE for data science: [Positron](https://github.com/posit-dev/positron). This follows Posit's general vision for language-agnostic data analysis software: [RStudio PBC renamed itself to Posit PBC in 2022](https://posit.co/blog/rstudio-is-becoming-posit/) to help move away from a pure R focus, and [Quarto](https://quarto.org/) is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.
+
+Positron is essentially a specialized version of Microsoft's [Visual Studio Code](https://code.visualstudio.com/), and is a fork of the underlying [Code - OSS](https://github.com/microsoft/vscode) that powers VS Code. I'm super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It's the best way to [edit files on a remote server](https://code.visualstudio.com/docs/remote/ssh). It's the best way to [interact with Docker containers and Docker Compose](https://code.visualstudio.com/docs/containers/overview). [GitHub Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) is fantastic.
+
+But for me, it's never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) and [Radian](https://github.com/randy3k/radian) for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).
+
+Positron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code's R extensions and add-ons is no longer necessary, since Posit has created a [custom R kernel—Ark](https://github.com/posit-dev/ark)—for any text editor or IDE with Jupyter support. It's still a beta product and a little rough around the edges, but I've found that it really is the perfect blend of the best parts of RStudio and VS Code.
+
+Below, following the example of [Marc Dotson](https://occasionaldivergences.com/posts/positron-intro/) and [Christopher Kenny](https://christophertkenny.com/posts/2024-06-29-positron-settings/), I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I've been using for the past couple weeks.
+
+
+## Some cool new things
