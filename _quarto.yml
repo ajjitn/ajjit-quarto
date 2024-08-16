@@ -1,6 +1,20 @@
 project:
   type: website
 
+  preview: 
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!etc/"
+
+  resources:
+    - "files/**"
+
+freeze: true
 
 # Metadata stuff
 pagetitle: "{{< meta title >}} | Ajjit Narayanan"
@@ -57,14 +71,8 @@ format:
     reference-location: margin
     footnotes-hover: true
     highlight-style: monokai
-  
-execute:
-  freeze: auto
 
-  resources:
-    - "files/**"
 
-    # Things that need to be at the site root
-    - ".htaccess"
+
 
 

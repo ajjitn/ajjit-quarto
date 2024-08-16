@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Some stuff I’ve worked on",
-    "section": "",
-    "text": "Spatial Equity Data Tool. Nov 18, 2021\nWhere Low-Income Jobs Are Being Lost to COVID-19: The places and industries most at risk. Aug 6, 2021\nWhere to Prioritize Emergency Rental Assistance to Keep Renters in Their Homes: Mapping neighborhoods where low-income renters face greater risks of housing instability and homelessness to inform an equitable COVID-19 response. May 14, 2021\nTracking COVID-19’s Effects by Race and Ethnicity: Updates on People’s Health, Housing, and Livelihoods since August 19, 2020. Aug 5, 2022"
-  },
-  {
-    "objectID": "projects/index.html#publications",
-    "href": "projects/index.html#publications",
-    "title": "Some stuff I’ve worked on",
-    "section": "Publications",
-    "text": "Publications\n\nPaper: Ethics and Empathy in Using Imputation to Disaggregate Data for Racial Equity, A Case Study Imputing Credit Bureau Data. July 21, 2021\nPaper: Using Differential Privacy to Advance Rural Economic Development: Applying Data Privacy and Confidentiality Methods to Industry Employment Data\nPaper: Towards an Open Data Bias Assessment Tool. Mar 5, 2019\nPublic Comment: Comment Letter on CEQ’s Climate and Economic Justice Screening Tool Beta Version. Apr 5, 2022\nBlog: We need better tools to measure bias in data that drive decisionmaking. Urban Wire, Mar 5, 2019\nBlog: To Advance Racial Equity, Releasing Disaggregated Data while Protecting Privacy Will Be Key. Urban Wire, Mar 2, 2021\nBlog: Choosing a Geocoder for the Urban Institute. Data@Urban, Mar 10, 2020"
-  },
-  {
-    "objectID": "projects/index.html#talks",
-    "href": "projects/index.html#talks",
-    "title": "Some stuff I’ve worked on",
-    "section": "Talks",
-    "text": "Talks\n\nInvited Presentation. Ethics of Imputation Case Study, Berkeley Computational Social Science Fall Fo-rum, Sep 2021\nInvited Presentation. How to Move to Equitable Data Practice: Principles, Methods, and Tools, Association for Public Data Users Conference, July 2021 Invited Presentation. Introducing a Spatial Equity Data Tool, Code for America Annual Conference, Code for America, March 2020\nInvited Presentation. Monthly updates on Jobs being lost to COVID-19, Data Science Conference on COVID-19, National Institute of Statistical Sciences, Aug 2020\nInvited Presentation. Using the Emergency Rental Assistance Index, National Neighborhood Indicators Partnership, Sep 2020\nInvited Presentation. Introducing a Spatial Equity Data Tool, Good Tech Fest Annual Conference, Good Tech Fest, May 2020\nInvited Presentation. Differential Privacy applied to the QCEW, BLS Disclosure Limitation Board, December 2020"
-  },
-  {
-    "objectID": "resume/index.html",
-    "href": "resume/index.html",
-    "title": "So you want to hire me…",
-    "section": "",
-    "text": "Download Resume"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello There!",
-    "section": "",
-    "text": "Blog Resume Projects\n\n\n\n\nI’m the Lead Data Scientist for Housing Equity at the Department of Housing & Urban Development (HUD) in Washington DC. I’m on a funded fellowship through the Federation for American Scientists to build data and technology capacity within government.\nIn my current role I help create data and tools to investigate housing discrimination, build dashboards for policy-makers, and advise on long term IT/Data infrastructure needs. I love all things open source, mapping, and GIS!\nI got my Masters in Geographic Data Science from the London School of Economics in 2023, and a Bachelor’s in Urban Studies and Economics from the University of Pennsylvania in 2019. Previously I worked as a Data Scientist for the Urban Institute, a Data Science Trainer at the LSE Digital Skills Lab, and a Data Science Consultant for the JED Foundation.\nI’m also a scuba certified diver 🤿, an enthusiastic (but unskilled) soccer player ⚽, and an avid biker 🚲."
-  },
-  {
     "objectID": "blog/2024/08/15/taking_quarto_for_a_spin/index.html",
     "href": "blog/2024/08/15/taking_quarto_for_a_spin/index.html",
     "title": "The art of shameless stealing",
@@ -61,5 +26,40 @@
     "title": "Blog",
     "section": "2023",
     "text": "2023\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello There!",
+    "section": "",
+    "text": "Blog CV Projects\n\n\n\n\nI’m the Lead Data Scientist for Housing Equity at the Department of Housing & Urban Development (HUD) in Washington DC. I’m on a funded fellowship through the Federation for American Scientists to build data and technology capacity within government.\nIn my current role I help create data and tools to investigate housing discrimination, build dashboards for policy-makers, and advise on long term IT/Data infrastructure needs. I love all things open source, mapping, and GIS!\nI got my Masters in Geographic Data Science from the London School of Economics in 2023, and a Bachelor’s in Urban Studies and Economics from the University of Pennsylvania in 2019. Previously I worked as a Data Scientist for the Urban Institute, a Data Science Trainer at the LSE Digital Skills Lab, and a Data Science Consultant for the JED Foundation.\nI’m also a scuba certified diver 🤿, an enthusiastic (but unskilled) soccer player ⚽, and an avid biker 🚲."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Some stuff I’ve worked on",
+    "section": "",
+    "text": "Spatial Equity Data Tool. Nov 18, 2021\nWhere Low-Income Jobs Are Being Lost to COVID-19: The places and industries most at risk. Aug 6, 2021\nWhere to Prioritize Emergency Rental Assistance to Keep Renters in Their Homes: Mapping neighborhoods where low-income renters face greater risks of housing instability and homelessness to inform an equitable COVID-19 response. May 14, 2021\nTracking COVID-19’s Effects by Race and Ethnicity: Updates on People’s Health, Housing, and Livelihoods since August 19, 2020. Aug 5, 2022"
+  },
+  {
+    "objectID": "projects/index.html#publications",
+    "href": "projects/index.html#publications",
+    "title": "Some stuff I’ve worked on",
+    "section": "Publications",
+    "text": "Publications\n\nPaper: Ethics and Empathy in Using Imputation to Disaggregate Data for Racial Equity, A Case Study Imputing Credit Bureau Data. July 21, 2021\nPaper: Using Differential Privacy to Advance Rural Economic Development: Applying Data Privacy and Confidentiality Methods to Industry Employment Data\nPaper: Towards an Open Data Bias Assessment Tool. Mar 5, 2019\nPublic Comment: Comment Letter on CEQ’s Climate and Economic Justice Screening Tool Beta Version. Apr 5, 2022\nBlog: We need better tools to measure bias in data that drive decisionmaking. Urban Wire, Mar 5, 2019\nBlog: To Advance Racial Equity, Releasing Disaggregated Data while Protecting Privacy Will Be Key. Urban Wire, Mar 2, 2021\nBlog: Choosing a Geocoder for the Urban Institute. Data@Urban, Mar 10, 2020"
+  },
+  {
+    "objectID": "projects/index.html#talks",
+    "href": "projects/index.html#talks",
+    "title": "Some stuff I’ve worked on",
+    "section": "Talks",
+    "text": "Talks\n\nInvited Presentation. Ethics of Imputation Case Study, Berkeley Computational Social Science Fall Fo-rum, Sep 2021\nInvited Presentation. How to Move to Equitable Data Practice: Principles, Methods, and Tools, Association for Public Data Users Conference, July 2021 Invited Presentation. Introducing a Spatial Equity Data Tool, Code for America Annual Conference, Code for America, March 2020\nInvited Presentation. Monthly updates on Jobs being lost to COVID-19, Data Science Conference on COVID-19, National Institute of Statistical Sciences, Aug 2020\nInvited Presentation. Using the Emergency Rental Assistance Index, National Neighborhood Indicators Partnership, Sep 2020\nInvited Presentation. Introducing a Spatial Equity Data Tool, Good Tech Fest Annual Conference, Good Tech Fest, May 2020\nInvited Presentation. Differential Privacy applied to the QCEW, BLS Disclosure Limitation Board, December 2020"
+  },
+  {
+    "objectID": "resume/index.html",
+    "href": "resume/index.html",
+    "title": "So you want to hire me…",
+    "section": "",
+    "text": "Download Resume"
   }
 ]
