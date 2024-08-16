@@ -1,21 +1,7 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello There!",
-    "section": "",
-    "text": "Blog Resume Projects\n\n\n\n\nI’m the Lead Data Scientist for Housing Equity at the Department of Housing & Urban Development (HUD) in Washington DC. I’m on a funded fellowship through the Federation for American Scientists to build data and technology capacity within government.\nIn my current role I help create data and tools to investigate housing discrimination, build dashboards for policy-makers, and advise on long term IT/Data infrastructure needs. I love all things open source, mapping, and GIS!\nI got my Masters in Geographic Data Science from the London School of Economics in 2023, and a Bachelor’s in Urban Studies and Economics from the University of Pennsylvania in 2019. Previously I worked as a Data Scientist for the Urban Institute, a Data Science Trainer at the LSE Digital Skills Lab, and a Data Science Consultant for the JED Foundation.\nI’m also a scuba certified diver 🤿, an enthusiastic (but unskilled) soccer player ⚽, and an avid biker 🚲."
-  },
-  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
-    "title": "Some stuff I’ve worked on",
-    "section": "",
-    "text": "Spatial Equity Data Tool. Nov 18, 2021\nWhere Low-Income Jobs Are Being Lost to COVID-19: The places and industries most at risk. Aug 6, 2021\nWhere to Prioritize Emergency Rental Assistance to Keep Renters in Their Homes: Mapping neighborhoods where low-income renters face greater risks of housing instability and homelessness to inform an equitable COVID-19 response. May 14, 2021\nTracking COVID-19’s Effects by Race and Ethnicity: Updates on People’s Health, Housing, and Livelihoods since August 19, 2020. Aug 5, 2022"
-  },
-  {
-    "objectID": "projects/index.html#data-tools",
-    "href": "projects/index.html#data-tools",
     "title": "Some stuff I’ve worked on",
     "section": "",
     "text": "Spatial Equity Data Tool. Nov 18, 2021\nWhere Low-Income Jobs Are Being Lost to COVID-19: The places and industries most at risk. Aug 6, 2021\nWhere to Prioritize Emergency Rental Assistance to Keep Renters in Their Homes: Mapping neighborhoods where low-income renters face greater risks of housing instability and homelessness to inform an equitable COVID-19 response. May 14, 2021\nTracking COVID-19’s Effects by Race and Ethnicity: Updates on People’s Health, Housing, and Livelihoods since August 19, 2020. Aug 5, 2022"
@@ -35,11 +21,18 @@
     "text": "Talks\n\nInvited Presentation. Ethics of Imputation Case Study, Berkeley Computational Social Science Fall Fo-rum, Sep 2021\nInvited Presentation. How to Move to Equitable Data Practice: Principles, Methods, and Tools, Association for Public Data Users Conference, July 2021 Invited Presentation. Introducing a Spatial Equity Data Tool, Code for America Annual Conference, Code for America, March 2020\nInvited Presentation. Monthly updates on Jobs being lost to COVID-19, Data Science Conference on COVID-19, National Institute of Statistical Sciences, Aug 2020\nInvited Presentation. Using the Emergency Rental Assistance Index, National Neighborhood Indicators Partnership, Sep 2020\nInvited Presentation. Introducing a Spatial Equity Data Tool, Good Tech Fest Annual Conference, Good Tech Fest, May 2020\nInvited Presentation. Differential Privacy applied to the QCEW, BLS Disclosure Limitation Board, December 2020"
   },
   {
-    "objectID": "blog/2024/copy_taking_quarto_for_a_spin/index.html",
-    "href": "blog/2024/copy_taking_quarto_for_a_spin/index.html",
-    "title": "The art of shameless stealing",
+    "objectID": "resume/index.html",
+    "href": "resume/index.html",
+    "title": "So you want to hire me…",
     "section": "",
-    "text": "At the end of June 2024, Posit released a beta version of its next-generation IDE for data science: Positron. This follows Posit’s general vision for language-agnostic data analysis software: RStudio PBC renamed itself to Posit PBC in 2022 to help move away from a pure R focus, and Quarto is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.\nPositron is essentially a specialized version of Microsoft’s Visual Studio Code, and is a fork of the underlying Code - OSS that powers VS Code. I’m super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It’s the best way to edit files on a remote server. It’s the best way to interact with Docker containers and Docker Compose. GitHub Copilot Chat is fantastic.\nBut for me, it’s never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the R extension and Radian for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).\nPositron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code’s R extensions and add-ons is no longer necessary, since Posit has created a custom R kernel—Ark—for any text editor or IDE with Jupyter support. It’s still a beta product and a little rough around the edges, but I’ve found that it really is the perfect blend of the best parts of RStudio and VS Code.\nBelow, following the example of Marc Dotson and Christopher Kenny, I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I’ve been using for the past couple weeks.\n\nSome cool new things"
+    "text": "Download Resume"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello There!",
+    "section": "",
+    "text": "Blog Resume Projects\n\n\n\n\nI’m the Lead Data Scientist for Housing Equity at the Department of Housing & Urban Development (HUD) in Washington DC. I’m on a funded fellowship through the Federation for American Scientists to build data and technology capacity within government.\nIn my current role I help create data and tools to investigate housing discrimination, build dashboards for policy-makers, and advise on long term IT/Data infrastructure needs. I love all things open source, mapping, and GIS!\nI got my Masters in Geographic Data Science from the London School of Economics in 2023, and a Bachelor’s in Urban Studies and Economics from the University of Pennsylvania in 2019. Previously I worked as a Data Scientist for the Urban Institute, a Data Science Trainer at the LSE Digital Skills Lab, and a Data Science Consultant for the JED Foundation.\nI’m also a scuba certified diver 🤿, an enthusiastic (but unskilled) soccer player ⚽, and an avid biker 🚲."
   },
   {
     "objectID": "blog/2024/08/15/taking_quarto_for_a_spin/index.html",
@@ -49,24 +42,24 @@
     "text": "At the end of June 2024, Posit released a beta version of its next-generation IDE for data science: Positron. This follows Posit’s general vision for language-agnostic data analysis software: RStudio PBC renamed itself to Posit PBC in 2022 to help move away from a pure R focus, and Quarto is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.\nPositron is essentially a specialized version of Microsoft’s Visual Studio Code, and is a fork of the underlying Code - OSS that powers VS Code. I’m super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It’s the best way to edit files on a remote server. It’s the best way to interact with Docker containers and Docker Compose. GitHub Copilot Chat is fantastic.\nBut for me, it’s never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the R extension and Radian for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).\nPositron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code’s R extensions and add-ons is no longer necessary, since Posit has created a custom R kernel—Ark—for any text editor or IDE with Jupyter support. It’s still a beta product and a little rough around the edges, but I’ve found that it really is the perfect blend of the best parts of RStudio and VS Code.\nBelow, following the example of Marc Dotson and Christopher Kenny, I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I’ve been using for the past couple weeks.\n\nSome cool new things"
   },
   {
+    "objectID": "blog/2024/copy_taking_quarto_for_a_spin/index.html",
+    "href": "blog/2024/copy_taking_quarto_for_a_spin/index.html",
+    "title": "The art of shameless stealing",
+    "section": "",
+    "text": "At the end of June 2024, Posit released a beta version of its next-generation IDE for data science: Positron. This follows Posit’s general vision for language-agnostic data analysis software: RStudio PBC renamed itself to Posit PBC in 2022 to help move away from a pure R focus, and Quarto is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.\nPositron is essentially a specialized version of Microsoft’s Visual Studio Code, and is a fork of the underlying Code - OSS that powers VS Code. I’m super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It’s the best way to edit files on a remote server. It’s the best way to interact with Docker containers and Docker Compose. GitHub Copilot Chat is fantastic.\nBut for me, it’s never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the R extension and Radian for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).\nPositron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code’s R extensions and add-ons is no longer necessary, since Posit has created a custom R kernel—Ark—for any text editor or IDE with Jupyter support. It’s still a beta product and a little rough around the edges, but I’ve found that it really is the perfect blend of the best parts of RStudio and VS Code.\nBelow, following the example of Marc Dotson and Christopher Kenny, I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I’ve been using for the past couple weeks.\n\nSome cool new things"
+  },
+  {
     "objectID": "blog/index.html#section",
     "href": "blog/index.html#section",
     "title": "Blog",
     "section": "2024",
-    "text": "2024\n\n\n    \n    \n                  \n            15 Aug 2024\n        \n        \n            The art of shameless stealing\n\n            \n            \n                \n                \n                    r\n                \n                \n                \n                    quarto\n                \n                \n                \n                    data science\n                \n                \n            \n            \n\n            Using Quarto templates to create this website\n            \n            \n        \n        \n        \n            \n        \n        \n    \n    \n    \n                  \n            15 Aug 2024\n        \n        \n            The art of shameless stealing\n\n            \n            \n                \n                \n                    r\n                \n                \n                \n                    quarto\n                \n                \n                \n                    data science\n                \n                \n            \n            \n\n            Using Quarto templates to create this website\n            \n            \n        \n        \n        \n            \n        \n        \n    \n    \n\n\nNo matching items"
+    "text": "2024\n\n\n    \n                  \n            15 Aug 2024\n        \n        \n            The art of shameless stealing\n            \n                \n                    r\n                \n                \n                    quarto\n                \n                \n                    data science\n                \n            \n            Using Quarto templates to create this website\n        \n        \n            \n        \n    \n    \n                  \n            15 Aug 2024\n        \n        \n            The art of shameless stealing\n            \n                \n                    r\n                \n                \n                    quarto\n                \n                \n                    data science\n                \n            \n            Using Quarto templates to create this website\n        \n        \n            \n        \n    \n\n\nNo matching items"
   },
   {
     "objectID": "blog/index.html#section-1",
     "href": "blog/index.html#section-1",
     "title": "Blog",
     "section": "2023",
-    "text": "2023\n\n\n    \n\n\nNo matching items"
-  },
-  {
-    "objectID": "resume/index.html",
-    "href": "resume/index.html",
-    "title": "So you want to hire me…",
-    "section": "",
-    "text": "Download Resume"
+    "text": "2023\n\n\n\n\nNo matching items"
   }
 ]
