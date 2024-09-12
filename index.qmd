@@ -1,8 +1,8 @@
 ---
 title: "Hello There!"
 pagetitle: "Ajjit Narayanan"
-main-photo: files/profiles/ajjit_headshot.jpg
-main-photo-square: files/profiles/ajjit_headshot.jpg
+main-photo: files/profiles/ajjit_headshot2.jpg
+main-photo-square: files/profiles/ajjit_headshot2.jpg
 title-block-banner: "#659B5E"
 author-meta: "Ajjit Narayanan"
 
