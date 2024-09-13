@@ -2,21 +2,21 @@
 title: "The art of shameless stealing"
 date: 2024-08-15
 description: "Using Quarto templates to create this website"
-image: "img/positron-logo.png"
+image: "img/heiss-logo.png"
 twitter-card:
-  image: "img/positron-logo.png"
+  image: "img/heiss-logo.png"
 open-graph:
-  image: "img/positron-logo.png"
+  image: "img/heiss-logo.png"
 categories:
   - r
   - quarto
   - data science
 format:
-  html: 
+  html:
     shift-heading-level-by: 1
 ---
 
-# Intro 
+# Intro
 
 In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and if I could ever afford a summer house I would buy one there). I saw some friends present their amazing data projects, I met lots of interesting new folks, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
 
@@ -60,12 +60,23 @@ In the above chunk, `$navbar-bg` is a builtin SASS variable which you can manual
 
 For a full list of the builtin SASS variables you can easily change and more info on theming, see [this](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) Quarto docs page.
 
+There are also handy functions to `lighten()` or `darken()` colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:
 
+```scss
+.cv-download {
+    font-family: $headings-font-family;
+    background-color: $orange;
+    border-color: $orange;
+    color: $white;
 
-## Automating using Github Actions 
+    &:hover {
+        background-color: lighten($color: $orange, $amount: 10);
+        color: $white;
+    }
+}
+```
 
-I could render the website on my local machine before pushing to Github Pages. But I'm lazy, and wanted to use the power of Github Actions to automaticaly render in case I forgot. 
-I walked away feeling energized and wanting to tackle a new QUa
+## Automating using Github Actions
 
 
 
@@ -78,6 +89,3 @@ But for me, it's never quite been a replacement for RStudio. Every couple months
 Positron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code's R extensions and add-ons is no longer necessary, since Posit has created a [custom R kernel—Ark](https://github.com/posit-dev/ark)—for any text editor or IDE with Jupyter support. It's still a beta product and a little rough around the edges, but I've found that it really is the perfect blend of the best parts of RStudio and VS Code.
 
 Below, following the example of [Marc Dotson](https://occasionaldivergences.com/posts/positron-intro/) and [Christopher Kenny](https://christophertkenny.com/posts/2024-06-29-positron-settings/), I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I've been using for the past couple weeks.
-
-
-## Some cool new things

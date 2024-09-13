@@ -1,7 +1,7 @@
 project:
   type: website
 
-  preview: 
+  preview:
     browser: true
     watch-inputs: true
     navigate: true
@@ -22,12 +22,12 @@ author-meta: "Ajjit Narayanan"
 
 website:
   title: "Ajjit Narayanan"
-  description: "Ajjit Narayanan is a Spatial Data Scientist"
+  description: "Ajjit Narayanan, Spatial Civic Data Scientist"
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   navbar:
     pinned: true
     search: true
-    
+
     left:
       - text: "About"
         href: "index.qmd"
@@ -60,9 +60,9 @@ website:
 
 format:
   html:
-    theme: 
+    theme:
       - html/website.scss
-#    grid: 
+#    grid:
 #      body-width: 900px
     toc: false
     code-link: true
@@ -71,8 +71,3 @@ format:
     reference-location: margin
     footnotes-hover: true
     highlight-style: monokai
-
-
-
-
-
