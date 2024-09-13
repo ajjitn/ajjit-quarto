@@ -138,6 +138,36 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-family: $navbar-font-family;
 }
 
+
+/* Keyframes for the animation */
+@keyframes slideInFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for the navbar-header class */
+.navbar-title {
+  animation: slideInFade 0.8s ease-out;
+  background-color: $dark-green; /* Dark background for contrast */
+  color: #fff; /* White text for readability */
+  padding: 15px 20px;
+  border-bottom: 2px solid #444; /* Slightly lighter border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Optional: hover effect for additional interaction */
+.navbar-title:hover {
+  background-color: $light-green; /* Slightly lighter background on hover */
+  cursor: pointer;
+}
+
+
 // Put all the icons in a single row in the hamburger menu
 .navbar-nav.navbar-nav-scroll.ms-auto {
     flex-direction: row;

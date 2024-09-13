@@ -16,6 +16,59 @@ format:
     shift-heading-level-by: 1
 ---
 
+# Intro 
+
+In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and if I could ever afford a summer house I would buy one there). I saw some friends present their amazing data projects, I met lots of interesting new folks, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
+
+I started by looking at what other people had done and was particularly struck by how elegant but low maintenance [Andrew Heiss's](https://www.andrewheiss.com/) Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:
+
+
+## Adjusting Fonts & Colors
+
+First, I adjusted some of the fonts and colors to match my personal preferences. One helpful tool I use to choose complementary colors is [coolors.co](https://coolors.co/) which automatically suggests complementary, nice, and colorblind friendly palettes. This involved changing the `html/website.scss` file that contains the CSS styles. Thankfully quarto theming files use SASS, a variant/extension of CSS that supports easy variable creation, default styles, and other features. You define new variables at the top of the file with:
+
+```scss
+//
+// Color system
+//
+$white:    #ffffff !default;
+$orange:  #EE6A24 !default;
+$light-orange:  #FB9E07 !default;
+$dark-green:   #003E1F !default;
+$light-green: #659B5E !default;
+```
+
+And you use them later on in the stylesheet like this:
+
+```scss
+// Navbar
+$navbar-bg: $dark-green !default;
+$navbar-fg: $white !default;
+$navbar-hl: $light-orange !default;
+
+```
+
+In the above chunk, `$navbar-bg` is a builtin SASS variable which you can manually specify for the background color of the navbar. You can also use the color variables inside a traditional CSS selector like:
+
+```scss
+.navbar-title {
+  background-color: $dark-green; /* Dark background for contrast */
+  color: $white; /* White text for readability */
+}
+
+```
+
+For a full list of the builtin SASS variables you can easily change and more info on theming, see [this](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) Quarto docs page.
+
+
+
+## Automating using Github Actions 
+
+I could render the website on my local machine before pushing to Github Pages. But I'm lazy, and wanted to use the power of Github Actions to automaticaly render in case I forgot. 
+I walked away feeling energized and wanting to tackle a new QUa
+
+
+
 At the end of June 2024, [Posit released a beta version](https://www.infoworld.com/article/3715702/maker-of-rstudio-launches-new-r-and-python-ide.html) of its next-generation IDE for data science: [Positron](https://github.com/posit-dev/positron). This follows Posit's general vision for language-agnostic data analysis software: [RStudio PBC renamed itself to Posit PBC in 2022](https://posit.co/blog/rstudio-is-becoming-posit/) to help move away from a pure R focus, and [Quarto](https://quarto.org/) is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.
 
 Positron is essentially a specialized version of Microsoft's [Visual Studio Code](https://code.visualstudio.com/), and is a fork of the underlying [Code - OSS](https://github.com/microsoft/vscode) that powers VS Code. I'm super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It's the best way to [edit files on a remote server](https://code.visualstudio.com/docs/remote/ssh). It's the best way to [interact with Docker containers and Docker Compose](https://code.visualstudio.com/docs/containers/overview). [GitHub Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) is fantastic.
