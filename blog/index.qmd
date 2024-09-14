@@ -33,9 +33,3 @@ title-block-banner: "#003E1F"
 
 :::{#posts_2024}
 :::
-
-## 2023
-
-:::{#posts_2023}
-:::
-

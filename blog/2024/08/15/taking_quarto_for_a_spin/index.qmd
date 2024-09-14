@@ -1,7 +1,7 @@
 ---
-title: "The art of shameless stealing"
+title: "Hello World: The art of shameless stealing"
 date: 2024-08-15
-description: "Using Quarto templates to create this website"
+description: "Using R, Quarto and Andrew Heiss to create this website"
 image: "img/heiss-logo.png"
 twitter-card:
   image: "img/heiss-logo.png"
@@ -10,7 +10,6 @@ open-graph:
 categories:
   - r
   - quarto
-  - data science
 format:
   html:
     shift-heading-level-by: 1
@@ -18,7 +17,7 @@ format:
 
 # Intro
 
-In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and if I could ever afford a summer house I would buy one there). I saw some friends present their amazing data projects, I met lots of interesting new folks, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
+In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
 
 I started by looking at what other people had done and was particularly struck by how elegant but low maintenance [Andrew Heiss's](https://www.andrewheiss.com/) Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:
 
@@ -60,6 +59,9 @@ In the above chunk, `$navbar-bg` is a builtin SASS variable which you can manual
 
 For a full list of the builtin SASS variables you can easily change and more info on theming, see [this](https://quarto.org/docs/output-formats/html-themes.html#sass-variables) Quarto docs page.
 
+
+## Handy SCSS tips
+
 There are also handy functions to `lighten()` or `darken()` colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:
 
 ```scss
@@ -77,15 +79,3 @@ There are also handy functions to `lighten()` or `darken()` colors in SASS which
 ```
 
 ## Automating using Github Actions
-
-
-
-At the end of June 2024, [Posit released a beta version](https://www.infoworld.com/article/3715702/maker-of-rstudio-launches-new-r-and-python-ide.html) of its next-generation IDE for data science: [Positron](https://github.com/posit-dev/positron). This follows Posit's general vision for language-agnostic data analysis software: [RStudio PBC renamed itself to Posit PBC in 2022](https://posit.co/blog/rstudio-is-becoming-posit/) to help move away from a pure R focus, and [Quarto](https://quarto.org/) is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.
-
-Positron is essentially a specialized version of Microsoft's [Visual Studio Code](https://code.visualstudio.com/), and is a fork of the underlying [Code - OSS](https://github.com/microsoft/vscode) that powers VS Code. I'm super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It's the best way to [edit files on a remote server](https://code.visualstudio.com/docs/remote/ssh). It's the best way to [interact with Docker containers and Docker Compose](https://code.visualstudio.com/docs/containers/overview). [GitHub Copilot Chat](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide) is fantastic.
-
-But for me, it's never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the [R extension](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r) and [Radian](https://github.com/randy3k/radian) for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).
-
-Positron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code's R extensions and add-ons is no longer necessary, since Posit has created a [custom R kernel—Ark](https://github.com/posit-dev/ark)—for any text editor or IDE with Jupyter support. It's still a beta product and a little rough around the edges, but I've found that it really is the perfect blend of the best parts of RStudio and VS Code.
-
-Below, following the example of [Marc Dotson](https://occasionaldivergences.com/posts/positron-intro/) and [Christopher Kenny](https://christophertkenny.com/posts/2024-06-29-positron-settings/), I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I've been using for the past couple weeks.

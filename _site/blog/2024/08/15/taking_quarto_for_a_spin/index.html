@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ajjit Narayanan">
-<meta name="description" content="Using Quarto templates to create this website">
+<meta name="description" content="Using R, Quarto and Andrew Heiss to create this website">
 
-<title>The art of shameless stealing | Ajjit Narayanan</title>
+<title>Hello World: The art of shameless stealing | Ajjit Narayanan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,12 +132,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </style>
 
 
-<meta property="og:title" content="The art of shameless stealing | Ajjit Narayanan">
-<meta property="og:description" content="Using Quarto templates to create this website">
+<meta property="og:title" content="Hello World: The art of shameless stealing | Ajjit Narayanan">
+<meta property="og:description" content="Using R, Quarto and Andrew Heiss to create this website">
 <meta property="og:image" content="img/heiss-logo.png">
 <meta property="og:site-name" content="Ajjit Narayanan">
-<meta name="twitter:title" content="The art of shameless stealing | Ajjit Narayanan">
-<meta name="twitter:description" content="Using Quarto templates to create this website">
+<meta name="twitter:title" content="Hello World: The art of shameless stealing | Ajjit Narayanan">
+<meta name="twitter:description" content="Using R, Quarto and Andrew Heiss to create this website">
 <meta name="twitter:image" content="img/heiss-logo.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -202,16 +202,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <div class="quarto-title-block"><div><h1 class="title">The art of shameless stealing</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+      <div class="quarto-title-block"><div><h1 class="title">Hello World: The art of shameless stealing</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                   <div>
         <div class="description">
-          Using Quarto templates to create this website
+          Using R, Quarto and Andrew Heiss to create this website
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">r</div>
                 <div class="quarto-category">quarto</div>
-                <div class="quarto-category">data science</div>
               </div>
                   </div>
   </div>
@@ -247,6 +246,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#intro" id="toc-intro" class="nav-link active" data-scroll-target="#intro">Intro</a>
   <ul class="collapse">
   <li><a href="#adjusting-fonts-colors" id="toc-adjusting-fonts-colors" class="nav-link" data-scroll-target="#adjusting-fonts-colors">Adjusting Fonts &amp; Colors</a></li>
+  <li><a href="#handy-scss-tips" id="toc-handy-scss-tips" class="nav-link" data-scroll-target="#handy-scss-tips">Handy SCSS tips</a></li>
   <li><a href="#automating-using-github-actions" id="toc-automating-using-github-actions" class="nav-link" data-scroll-target="#automating-using-github-actions">Automating using Github Actions</a></li>
   </ul></li>
   </ul>
@@ -263,7 +263,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
-<p>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and if I could ever afford a summer house I would buy one there). I saw some friends present their amazing data projects, I met lots of interesting new folks, and saw lots of presentations on Quarto. And that experience motivated me to do something I’ve wanted to do for a while - make my own personal website with Quarto!</p>
+<p>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I’ve wanted to do for a while - make my own personal website with Quarto!</p>
 <p>I started by looking at what other people had done and was particularly struck by how elegant but low maintenance <a href="https://www.andrewheiss.com/">Andrew Heiss’s</a> Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:</p>
 <section id="adjusting-fonts-colors" class="level3">
 <h3 class="anchored" data-anchor-id="adjusting-fonts-colors">Adjusting Fonts &amp; Colors</h3>
@@ -287,6 +287,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="va">$white</span><span class="op">;</span> <span class="co">/* White text for readability */</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>For a full list of the builtin SASS variables you can easily change and more info on theming, see <a href="https://quarto.org/docs/output-formats/html-themes.html#sass-variables">this</a> Quarto docs page.</p>
+</section>
+<section id="handy-scss-tips" class="level3">
+<h3 class="anchored" data-anchor-id="handy-scss-tips">Handy SCSS tips</h3>
 <p>There are also handy functions to <code>lighten()</code> or <code>darken()</code> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here’s how I lighten the orange colored CV donwnload button on my website on hover:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.cv-download</span> {</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">font-family</span>: <span class="va">$headings-font-family</span><span class="op">;</span></span>
@@ -302,11 +305,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="automating-using-github-actions" class="level3">
 <h3 class="anchored" data-anchor-id="automating-using-github-actions">Automating using Github Actions</h3>
-<p>At the end of June 2024, <a href="https://www.infoworld.com/article/3715702/maker-of-rstudio-launches-new-r-and-python-ide.html">Posit released a beta version</a> of its next-generation IDE for data science: <a href="https://github.com/posit-dev/positron">Positron</a>. This follows Posit’s general vision for language-agnostic data analysis software: <a href="https://posit.co/blog/rstudio-is-becoming-posit/">RStudio PBC renamed itself to Posit PBC in 2022</a> to help move away from a pure R focus, and <a href="https://quarto.org/">Quarto</a> is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.</p>
-<p>Positron is essentially a specialized version of Microsoft’s <a href="https://code.visualstudio.com/">Visual Studio Code</a>, and is a fork of the underlying <a href="https://github.com/microsoft/vscode">Code - OSS</a> that powers VS Code. I’m super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It’s the best way to <a href="https://code.visualstudio.com/docs/remote/ssh">edit files on a remote server</a>. It’s the best way to <a href="https://code.visualstudio.com/docs/containers/overview">interact with Docker containers and Docker Compose</a>. <a href="https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide">GitHub Copilot Chat</a> is fantastic.</p>
-<p>But for me, it’s never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the <a href="https://marketplace.visualstudio.com/items?itemName=REditorSupport.r">R extension</a> and <a href="https://github.com/randy3k/radian">Radian</a> for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).</p>
-<p>Positron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code’s R extensions and add-ons is no longer necessary, since Posit has created a <a href="https://github.com/posit-dev/ark">custom R kernel—Ark</a>—for any text editor or IDE with Jupyter support. It’s still a beta product and a little rough around the edges, but I’ve found that it really is the perfect blend of the best parts of RStudio and VS Code.</p>
-<p>Below, following the example of <a href="https://occasionaldivergences.com/posts/positron-intro/">Marc Dotson</a> and <a href="https://christophertkenny.com/posts/2024-06-29-positron-settings/">Christopher Kenny</a>, I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I’ve been using for the past couple weeks.</p>
 
 
 <!-- -->
@@ -500,9 +498,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "The art of shameless stealing"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hello World: The art of shameless stealing"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2024-08-15</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Using Quarto templates to create this website"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Using R, Quarto and Andrew Heiss to create this website"</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "img/heiss-logo.png"</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">  image: "img/heiss-logo.png"</span></span>
@@ -511,85 +509,75 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - r</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - quarto</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - data science</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">    shift-heading-level-by: 1</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu"># Intro</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and if I could ever afford a summer house I would buy one there). I saw some friends present their amazing data projects, I met lots of interesting new folks, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>I started by looking at what other people had done and was particularly struck by how elegant but low maintenance <span class="co">[</span><span class="ot">Andrew Heiss's</span><span class="co">](https://www.andrewheiss.com/)</span> Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">    shift-heading-level-by: 1</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># Intro</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>I started by looking at what other people had done and was particularly struck by how elegant but low maintenance <span class="co">[</span><span class="ot">Andrew Heiss's</span><span class="co">](https://www.andrewheiss.com/)</span> Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adjusting Fonts &amp; Colors</span></span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>First, I adjusted some of the fonts and colors to match my personal preferences. One helpful tool I use to choose complementary colors is <span class="co">[</span><span class="ot">coolors.co</span><span class="co">](https://coolors.co/)</span> which automatically suggests complementary, nice, and colorblind friendly palettes. This involved changing the <span class="in">`html/website.scss`</span> file that contains the CSS styles. Thankfully quarto theming files use SASS, a variant/extension of CSS that supports easy variable creation, default styles, and other features. You define new variables at the top of the file with:</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="in">//</span></span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="in">// Color system</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="in">//</span></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="in">$white:    #ffffff !default;</span></span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="in">$orange:  #EE6A24 !default;</span></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="in">$light-orange:  #FB9E07 !default;</span></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="in">$dark-green:   #003E1F !default;</span></span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="in">$light-green: #659B5E !default;</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>And you use them later on in the stylesheet like this:</span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="in">// Navbar</span></span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-bg: $dark-green !default;</span></span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-fg: $white !default;</span></span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-hl: $light-orange !default;</span></span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>In the above chunk, <span class="in">`$navbar-bg`</span> is a builtin SASS variable which you can manually specify for the background color of the navbar. You can also use the color variables inside a traditional CSS selector like:</span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="in">.navbar-title {</span></span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="in">  background-color: $dark-green; /* Dark background for contrast */</span></span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="in">  color: $white; /* White text for readability */</span></span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>For a full list of the builtin SASS variables you can easily change and more info on theming, see <span class="co">[</span><span class="ot">this</span><span class="co">](https://quarto.org/docs/output-formats/html-themes.html#sass-variables)</span> Quarto docs page.</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adjusting Fonts &amp; Colors</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>First, I adjusted some of the fonts and colors to match my personal preferences. One helpful tool I use to choose complementary colors is <span class="co">[</span><span class="ot">coolors.co</span><span class="co">](https://coolors.co/)</span> which automatically suggests complementary, nice, and colorblind friendly palettes. This involved changing the <span class="in">`html/website.scss`</span> file that contains the CSS styles. Thankfully quarto theming files use SASS, a variant/extension of CSS that supports easy variable creation, default styles, and other features. You define new variables at the top of the file with:</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="in">//</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="in">// Color system</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="in">//</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="in">$white:    #ffffff !default;</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="in">$orange:  #EE6A24 !default;</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="in">$light-orange:  #FB9E07 !default;</span></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="in">$dark-green:   #003E1F !default;</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="in">$light-green: #659B5E !default;</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>And you use them later on in the stylesheet like this:</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="in">// Navbar</span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-bg: $dark-green !default;</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-fg: $white !default;</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="in">$navbar-hl: $light-orange !default;</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>In the above chunk, <span class="in">`$navbar-bg`</span> is a builtin SASS variable which you can manually specify for the background color of the navbar. You can also use the color variables inside a traditional CSS selector like:</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="in">.navbar-title {</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="in">  background-color: $dark-green; /* Dark background for contrast */</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="in">  color: $white; /* White text for readability */</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>For a full list of the builtin SASS variables you can easily change and more info on theming, see <span class="co">[</span><span class="ot">this</span><span class="co">](https://quarto.org/docs/output-formats/html-themes.html#sass-variables)</span> Quarto docs page.</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>There are also handy functions to <span class="in">`lighten()`</span> or <span class="in">`darken()`</span> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Handy SCSS tips</span></span>
 <span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
-<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="in">.cv-download {</span></span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="in">    font-family: $headings-font-family;</span></span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="in">    background-color: $orange;</span></span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">    border-color: $orange;</span></span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">    color: $white;</span></span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="in">    &amp;:hover {</span></span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="in">        background-color: lighten($color: $orange, $amount: 10);</span></span>
-<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">        color: $white;</span></span>
-<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>There are also handy functions to <span class="in">`lighten()`</span> or <span class="in">`darken()`</span> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="in">.cv-download {</span></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">    font-family: $headings-font-family;</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">    background-color: $orange;</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="in">    border-color: $orange;</span></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="in">    color: $white;</span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">    &amp;:hover {</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">        background-color: lighten($color: $orange, $amount: 10);</span></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">        color: $white;</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>At the end of June 2024, <span class="co">[</span><span class="ot">Posit released a beta version</span><span class="co">](https://www.infoworld.com/article/3715702/maker-of-rstudio-launches-new-r-and-python-ide.html)</span> of its next-generation IDE for data science: <span class="co">[</span><span class="ot">Positron</span><span class="co">](https://github.com/posit-dev/positron)</span>. This follows Posit's general vision for language-agnostic data analysis software: <span class="co">[</span><span class="ot">RStudio PBC renamed itself to Posit PBC in 2022</span><span class="co">](https://posit.co/blog/rstudio-is-becoming-posit/)</span> to help move away from a pure R focus, and <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/)</span> is pan-lingual successor to R Markdown. Having the name of the main programming language in the title of things is out—providing more general tools is in.</span>
-<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>Positron is essentially a specialized version of Microsoft's <span class="co">[</span><span class="ot">Visual Studio Code</span><span class="co">](https://code.visualstudio.com/)</span>, and is a fork of the underlying <span class="co">[</span><span class="ot">Code - OSS</span><span class="co">](https://github.com/microsoft/vscode)</span> that powers VS Code. I'm super excited about this—in my own work, I use RStudio for most things R-related and VS Code for everything else (Stan, Python, HTML, CSS, Lua, LaTeX, Typst, etc.). VS Code is phenomenal and I love using it. It's the best way to <span class="co">[</span><span class="ot">edit files on a remote server</span><span class="co">](https://code.visualstudio.com/docs/remote/ssh)</span>. It's the best way to <span class="co">[</span><span class="ot">interact with Docker containers and Docker Compose</span><span class="co">](https://code.visualstudio.com/docs/containers/overview)</span>. <span class="co">[</span><span class="ot">GitHub Copilot Chat</span><span class="co">](https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide)</span> is fantastic.</span>
-<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>But for me, it's never quite been a replacement for RStudio. Every couple months, I play around with trying to use VS Code for R work full time, but the constellation of VS Code R extensions (like the <span class="co">[</span><span class="ot">R extension</span><span class="co">](https://marketplace.visualstudio.com/items?itemName=REditorSupport.r)</span> and <span class="co">[</span><span class="ot">Radian</span><span class="co">](https://github.com/randy3k/radian)</span> for the terminal) and general R support has never been what I want, and I always end up going back to RStudio. Which is fine! I adore RStudio too and have been using it since it first came out in beta in February 2011 (13 years!).</span>
-<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>Positron brings pretty much all the little R-related things that I love from RStudio and have missed in Visual Studio Code. The regular collection of VS Code's R extensions and add-ons is no longer necessary, since Posit has created a <span class="co">[</span><span class="ot">custom R kernel—Ark</span><span class="co">](https://github.com/posit-dev/ark)</span>—for any text editor or IDE with Jupyter support. It's still a beta product and a little rough around the edges, but I've found that it really is the perfect blend of the best parts of RStudio and VS Code.</span>
-<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>Below, following the example of <span class="co">[</span><span class="ot">Marc Dotson</span><span class="co">](https://occasionaldivergences.com/posts/positron-intro/)</span> and <span class="co">[</span><span class="ot">Christopher Kenny</span><span class="co">](https://christophertkenny.com/posts/2024-06-29-positron-settings/)</span>, I want to highlight some of the neat new things Positron can do and share some of the settings, extensions, and other customizations I've been using for the past couple weeks.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

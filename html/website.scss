@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito');
 
+@font-face {
+    font-family: 'LeMurmure';
+    src: url('html/fonts/LeMurmure-Regular.woff2') format('woff2'),
+        url('html/fonts/LeMurmure-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*-- scss:defaults --*/
 
 $theme: "cosmo" !default;
@@ -155,10 +163,8 @@ pre.text, pre.sourceCode, .cell-output pre {
 .navbar-title {
   animation: slideInFade 0.8s ease-out;
   background-color: $dark-green; /* Dark background for contrast */
-  color: #fff; /* White text for readability */
-  padding: 15px 20px;
-  border-bottom: 2px solid #444; /* Slightly lighter border for separation */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: LeMurmure;
+  font-size: 35px;
 }
 
 /* Optional: hover effect for additional interaction */
