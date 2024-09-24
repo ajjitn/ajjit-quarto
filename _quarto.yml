@@ -14,8 +14,6 @@ project:
   resources:
     - "files/**"
 
-freeze: true
-
 # Metadata stuff
 pagetitle: "{{< meta title >}} | Ajjit Narayanan"
 author-meta: "Ajjit Narayanan"
