@@ -1,7 +1,7 @@
 ---
 title: "Hello World: The art of shameless stealing"
 date: 2024-08-15
-description: "Using R, Quarto and Andrew Heiss to create this website"
+description: "Using R, Quarto, SCSS, and Andrew Heiss to create this website"
 image: "img/heiss-logo.png"
 twitter-card:
   image: "img/heiss-logo.png"
@@ -17,7 +17,7 @@ format:
 
 # Intro
 
-In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
+In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people should know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!
 
 I started by looking at what other people had done and was particularly struck by how elegant but low maintenance [Andrew Heiss's](https://www.andrewheiss.com/) Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:
 
@@ -62,7 +62,9 @@ For a full list of the builtin SASS variables you can easily change and more inf
 
 ## Handy SCSS tips
 
-There are also handy functions to `lighten()` or `darken()` colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:
+There are also handy functions to `lighten()` or `darken()` colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color.
+
+SCSS also makes use of nesting to allow you to group related CSS rules within a hierarchical structure that mimics the actual content of your HTML page. I find that this makes complex CSS pages so much more readable. As an example of both tips above, here's how I lighten the orange colored CV download button on my website on hover:
 
 ```scss
 .cv-download {
@@ -78,4 +80,8 @@ There are also handy functions to `lighten()` or `darken()` colors in SASS which
 }
 ```
 
+The `&:hover {...}` is also handy SCSS syntax which allows me to specify more specific CSS rules when the cv-download class button is hovered over. For those of us that have had the (mis)forture of doing this with raw CSS, this approach is a lot cleaner and much easier.
+
 ## Automating using Github Actions
+
+One other feature I added to Andrew's website template was adding a Github Action to automatically render and deploy my website to Github Pages whenever I push to Github. To do so, I mostly followed the instructions on [this](https://quarto.org/docs/publishing/github-pages.html#github-action) helpful Quarto documentation page on deployments. One key change I had to make

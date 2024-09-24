@@ -263,7 +263,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="intro" class="level2">
 <h2 class="anchored" data-anchor-id="intro">Intro</h2>
-<p>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I’ve wanted to do for a while - make my own personal website with Quarto!</p>
+<p>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people should know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I’ve wanted to do for a while - make my own personal website with Quarto!</p>
 <p>I started by looking at what other people had done and was particularly struck by how elegant but low maintenance <a href="https://www.andrewheiss.com/">Andrew Heiss’s</a> Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:</p>
 <section id="adjusting-fonts-colors" class="level3">
 <h3 class="anchored" data-anchor-id="adjusting-fonts-colors">Adjusting Fonts &amp; Colors</h3>
@@ -290,7 +290,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="handy-scss-tips" class="level3">
 <h3 class="anchored" data-anchor-id="handy-scss-tips">Handy SCSS tips</h3>
-<p>There are also handy functions to <code>lighten()</code> or <code>darken()</code> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here’s how I lighten the orange colored CV donwnload button on my website on hover:</p>
+<p>There are also handy functions to <code>lighten()</code> or <code>darken()</code> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color.</p>
+<p>SCSS also makes use of nesting to allow you to group related CSS rules within a hierarchical structure that mimics the actual content of your HTML page. I find that this makes complex CSS pages so much more readable. As an example of both tips above, here’s how I lighten the orange colored CV download button on my website on hover:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode scss code-with-copy"><code class="sourceCode scss"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.cv-download</span> {</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">font-family</span>: <span class="va">$headings-font-family</span><span class="op">;</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background-color</span>: <span class="va">$orange</span><span class="op">;</span></span>
@@ -302,6 +303,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="kw">color</span>: <span class="va">$white</span><span class="op">;</span></span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>&amp;:hover {...}</code> is also handy SCSS syntax which allows me to specify more specific CSS rules when the cv-download class button is hovered over. For those of us that have had the (mis)forture of doing this with raw CSS, this approach is a lot cleaner and much easier.</p>
 </section>
 <section id="automating-using-github-actions" class="level3">
 <h3 class="anchored" data-anchor-id="automating-using-github-actions">Automating using Github Actions</h3>
@@ -516,7 +518,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># Intro</span></span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people shoudl know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>In August of 2024, I went to my first ever Posit Conf in Seattle (as a sidenote, Seattle has probably the best summer weather of any American city and more people should know about it). I saw some friends present their amazing data projects, met lots of interesting new people, and saw lots of presentations on Quarto. And that experience motivated me to do something I've wanted to do for a while - make my own personal website with Quarto!</span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>I started by looking at what other people had done and was particularly struck by how elegant but low maintenance <span class="co">[</span><span class="ot">Andrew Heiss's</span><span class="co">](https://www.andrewheiss.com/)</span> Quarto website was. And thanks to him making his code open source, I was able to quickly and shamelessly fork his code to jumpstart my own website creation. To make my plagiariasm slightly less transparent, I made a few edits outlined below:</span>
 <span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
@@ -561,23 +563,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Handy SCSS tips</span></span>
 <span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>There are also handy functions to <span class="in">`lighten()`</span> or <span class="in">`darken()`</span> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color. As an example, here's how I lighten the orange colored CV donwnload button on my website on hover:</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>There are also handy functions to <span class="in">`lighten()`</span> or <span class="in">`darken()`</span> colors in SASS which I use frequently and make CSS color management so much easier! No more wondering about which light green goes with your dark green color.</span>
 <span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="in">.cv-download {</span></span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">    font-family: $headings-font-family;</span></span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">    background-color: $orange;</span></span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="in">    border-color: $orange;</span></span>
-<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="in">    color: $white;</span></span>
-<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">    &amp;:hover {</span></span>
-<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a><span class="in">        background-color: lighten($color: $orange, $amount: 10);</span></span>
-<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">        color: $white;</span></span>
-<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
-<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
-<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>SCSS also makes use of nesting to allow you to group related CSS rules within a hierarchical structure that mimics the actual content of your HTML page. I find that this makes complex CSS pages so much more readable. As an example of both tips above, here's how I lighten the orange colored CV download button on my website on hover:</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a><span class="in">```scss</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="in">.cv-download {</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a><span class="in">    font-family: $headings-font-family;</span></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="in">    background-color: $orange;</span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="in">    border-color: $orange;</span></span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a><span class="in">    color: $white;</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a><span class="in">    &amp;:hover {</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="in">        background-color: lighten($color: $orange, $amount: 10);</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="in">        color: $white;</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="in">    }</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="in">}</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>The <span class="in">`&amp;:hover {...}`</span> is also handy SCSS syntax which allows me to specify more specific CSS rules when the cv-download class button is hovered over. For those of us that have had the (mis)forture of doing this with raw CSS, this approach is a lot cleaner and much easier.</span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
