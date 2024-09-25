@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ajjit Narayanan">
-<meta name="description" content="Using R, Quarto and Andrew Heiss to create this website">
+<meta name="description" content="Using R, Quarto, SCSS, and Andrew Heiss to create this website">
 
 <title>Hello World: The art of shameless stealing | Ajjit Narayanan</title>
 <style>
@@ -133,11 +133,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <meta property="og:title" content="Hello World: The art of shameless stealing | Ajjit Narayanan">
-<meta property="og:description" content="Using R, Quarto and Andrew Heiss to create this website">
+<meta property="og:description" content="Using R, Quarto, SCSS, and Andrew Heiss to create this website">
 <meta property="og:image" content="img/heiss-logo.png">
 <meta property="og:site-name" content="Ajjit Narayanan">
 <meta name="twitter:title" content="Hello World: The art of shameless stealing | Ajjit Narayanan">
-<meta name="twitter:description" content="Using R, Quarto and Andrew Heiss to create this website">
+<meta name="twitter:description" content="Using R, Quarto, SCSS, and Andrew Heiss to create this website">
 <meta name="twitter:image" content="img/heiss-logo.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -205,7 +205,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="quarto-title-block"><div><h1 class="title">Hello World: The art of shameless stealing</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
                   <div>
         <div class="description">
-          Using R, Quarto and Andrew Heiss to create this website
+          Using R, Quarto, SCSS, and Andrew Heiss to create this website
         </div>
       </div>
                           <div class="quarto-categories">
@@ -307,6 +307,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="automating-using-github-actions" class="level3">
 <h3 class="anchored" data-anchor-id="automating-using-github-actions">Automating using Github Actions</h3>
+<p>One other feature I added to Andrew’s website template was adding a Github Action to automatically render and deploy my website to Github Pages whenever I push to Github. To do so, I mostly followed the instructions on <a href="https://quarto.org/docs/publishing/github-pages.html#github-action">this</a> helpful Quarto documentation page on deployments. One key change I made was using <code>renv</code> to help manage the packages I used within my</p>
 
 
 <!-- -->
@@ -502,7 +503,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hello World: The art of shameless stealing"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2024-08-15</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Using R, Quarto and Andrew Heiss to create this website"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Using R, Quarto, SCSS, and Andrew Heiss to create this website"</span></span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "img/heiss-logo.png"</span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">  image: "img/heiss-logo.png"</span></span>
@@ -583,7 +584,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>The <span class="in">`&amp;:hover {...}`</span> is also handy SCSS syntax which allows me to specify more specific CSS rules when the cv-download class button is hovered over. For those of us that have had the (mis)forture of doing this with raw CSS, this approach is a lot cleaner and much easier.</span>
 <span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## Automating using Github Actions</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>One other feature I added to Andrew's website template was adding a Github Action to automatically render and deploy my website to Github Pages whenever I push to Github. To do so, I mostly followed the instructions on <span class="co">[</span><span class="ot">this</span><span class="co">](https://quarto.org/docs/publishing/github-pages.html#github-action)</span> helpful Quarto documentation page on deployments. One key change I made was using <span class="in">`renv`</span> to help manage the packages I used within my</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

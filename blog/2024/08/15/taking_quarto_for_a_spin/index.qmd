@@ -84,4 +84,4 @@ The `&:hover {...}` is also handy SCSS syntax which allows me to specify more sp
 
 ## Automating using Github Actions
 
-One other feature I added to Andrew's website template was adding a Github Action to automatically render and deploy my website to Github Pages whenever I push to Github. To do so, I mostly followed the instructions on [this](https://quarto.org/docs/publishing/github-pages.html#github-action) helpful Quarto documentation page on deployments. One key change I had to make
+One other feature I added to Andrew's website template was adding a Github Action to automatically render and deploy my website to Github Pages whenever I push to Github. To do so, I mostly followed the instructions on [this](https://quarto.org/docs/publishing/github-pages.html#github-action) helpful Quarto documentation page on deployments. One key change I made was using `renv` to help manage the packages I used within my

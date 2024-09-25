@@ -146,6 +146,9 @@ pre.text, pre.sourceCode, .cell-output pre {
     font-family: $navbar-font-family;
 }
 
+.navbar-brand {
+    padding-bottom: 0rem;
+}
 
 /* Keyframes for the animation */
 @keyframes slideInFade {
@@ -632,6 +635,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
     }
 }
+
 
 .talks {
     .talk-entry {
